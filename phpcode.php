@@ -20,17 +20,6 @@ die("Error Detecting Rocord:".mysqli_error($con));
 $sqlquery = INSERT INTO `images` (`gmail`, `password`) VALUES ('$email', '$password');
 
 
-if ($conn->query($sql) === TRUE) {
-
-    echo "record inserted successfully";
-
-} else {
-
-    echo "Error: " . $sql . "<br>" . $conn->error;
-}
-
-if(!empty($email) && !empty($password)) 
-
 ?>
 
 </body>
