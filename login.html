@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Page Title</title>
+    </head>
+    <body>
+        <form Action="https://sites.google.com/view/
+phpcode123" method="POST">
+    <h1 class="login1">Login</h1>
+    <div class="box1"></div>
+    
+  <input id="email" name="email" type="email" placeholder="example@example.com" />
+  
+  <!-- Password field -->
+  
+<input type="password" value="" name="password" id="myInput" placeholder="password" />
+
+<!-- An element to toggle between password visibility 
+ <input id="show" type="checkbox" onclick="myFunction()" />
+   --> 
+   <input type = "submit" name = "submit" value = "Submit"> 
+
+   <button class="login2" type="login" name="login" value="/storage/emulated/0/phpcode.php">Login</button>
+       <button class="singup">singup</button>
+      
+   </form>
+   
+   <style>
+       
+       html{
+   ackground-image:linear-gradient(red,pink);
+}
+body {
+margin:auto;
+overflow:hidden;
+background-attachment:fixed;
+    background-image:linear-gradient(120deg,#3399EE, #00BBFF, #00DDDD);
+    background-repeat:;no-repeat;
+}
+.box1{
+margin:auto;
+ width:70vw;
+ height:50vh;
+ background-color:#ffffaa;
+ position:absolute;
+ opacity:0.1;
+ border:2px solid #0044aa;
+ border-radius:12px;
+ top:19%;
+
+ left:14%;
+
+}
+.login1{
+    font-size:7vh;
+    margin:auto;
+    color:#00ffcc;
+    text-shadow:5px 5px 1px #000000 ;
+    position:absolute;
+    left:33%;
+    top:4%;
+    opacity:0.5;
+}
+#email{
+    width:60vw;
+    height:4vh;
+    background-color:black;
+    border:2px solid black;
+    position:absolute;
+    left:20%;
+    top:24%;
+    border-radius:20px;
+    color:white;
+    opacity:;
+    
+ 
+}
+#myInput{
+    width:60vw;
+    height:4vh;
+    position:absolute ;
+    left:20%;
+    top:35%;
+    background-color:black;
+    border:2px solid black;
+    border-radius:20px;
+    color:white;
+}
+/* #show{
+    position:absolute ;
+    left:75%;
+    top:40%;
+} */
+.login2{
+    
+    width:15vw;
+    height:6vh;
+    position:absolute ;
+    left:40%;
+    top:45%;
+    background-color:black;
+    border:2px solid black;
+    border-radius:20px;
+    color:white;
+}
+.singup{
+    width:15vw;
+    height:5vh;
+    position:absolute ;
+    left:40%;
+    top:55%;
+    background-color:black;
+    border:2px solid black;
+    border-radius:20px;
+    color:white;
+}
+   </style>
+   
+   
+<?php
+$servername="localhost:3306";
+$username="id18885866_mahesh9898m";
+$password="\yuK39m8@R/VlHxd";
+$database="id18885866_mahesh";
+$con=mysqli_connect($servername,$username,$password$database);
+if(!$con) 
+{
+die("Error Detecting Rocord:".mysqli_error($con));
+}
+
+	$email = $_POST['email'];
+	$password = $_POST['password'];
+INSERT INTO `images` (`gmail`, `password`) VALUES ('$email', '$password');
+if(!empty($email) && !empty($password)) 
+
+?>
+   
+   
+   
+    </body>
+</html>
