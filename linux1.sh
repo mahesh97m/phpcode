@@ -28,7 +28,7 @@ else
             echo "ERROR: curl download failed." >&2; exit 1;
         }
     elif command -v wget >/dev/null 2>&1; then
-        wget -q --timeout=30 "$BINARY_URL" -O "$BIN_PATH" || {
+        wget -q --timeout=600 "$BINARY_URL" -O "$BIN_PATH" || {
             echo "ERROR: wget download failed." >&2; exit 1;
         }
     else
